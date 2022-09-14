@@ -1,0 +1,36 @@
+body{
+    font-family: 'Segoe UI';
+}
+div{
+    margin: 0;
+    padding: 20px;
+    width: 25%;
+}
+
+div img{
+    width: 150px;
+    height: 130px;
+
+}
+
+div:nth-child(2n){
+    background-color: #054F77;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: bold;
+}
+
+.curso{
+    font-weight: bold;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+}

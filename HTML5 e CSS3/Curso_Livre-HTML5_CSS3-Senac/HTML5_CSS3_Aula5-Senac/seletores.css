@@ -1,0 +1,94 @@
+body{
+    /* cor de fundo do corpo da página */
+    background-color: azure;
+}
+
+h1{
+    /* cor da fonte */
+    color: #FF7C00;
+    /* espessura da fonte */
+    font-weight: 100;
+    /*tamanho da fonte*/ 
+    font-size: 38px; 
+}
+
+/*seletor universal, atribui a todas as tags do html, definido por asterísco (*) */
+*{
+    /* tipo da fonte */
+    font-family: 'Segoe UI';
+}
+
+/* seletor por ID, definido por hashtag (#) */
+#meuCurso{
+    color: darkblue;
+}
+
+/* A diferença entre o seletor de ID e o de Classes é que o ID deve
+ ser único  para cada tag, já a Classe pode ser a mesma em várias tags */
+
+/* seletor de classes, definido por ponto (.) */
+.destaque{
+    color: brown;/*cor do texto*/
+    font-weight: bold;/*negrito*/
+    font-style: italic;/*itálico*/
+}
+
+/* seletor contextual, é aplicado apenas no item que estiver
+ dentro da tag declarada, no exemplo abaixo é aplicado somente no H2
+ que está dentro da tag form */
+form h2{
+    font-weight: 100;
+}
+
+/* seletor por atributos, nesse caso deve ser especificado
+o type para que não seja aplicado a todos os inputs conforme exemplo abaixo*/
+input[type=text],
+input[type=email],
+textarea /*os mesmos estilos também podem ser aplicados a outros types
+desde que sejam separados por vírgula conforme exemplo acima*/
+{
+    width: 300px;
+    border-radius: 10px; /*borda arredondada*/
+    border: 1px solid #DDD;/*borda*/
+}
+
+/*seletor de ação, quando o cursor do mouse for passado por cima do
+item definido abaixo pelo "hover", a ação será aplicada conforme
+exemplo abaixo que ao passar o mouse pelos inputs os mesmos ficam
+com a borda preta*/
+input:hover,
+textarea:hover
+/*mesmo procedimento dos types acima separados
+por vírgula*/
+{
+    border: 1px solid #000000;/*borda*/
+}
+
+a:hover{
+    color: red;
+}
+
+/* esse seletor faz o estilo zebra, aplicado a cada 2 itens */
+li:nth-child(2n){
+    background-color: lightgray;
+}
+
+/* esse seletor faz o estilo zebra, aplicado a cada
+2 itens começando contagem pelo 1 */
+li:nth-child(2n+1){
+    background-color: #eeeeee;
+}
+
+/* botões que estejam dentro do formulário */
+form button{
+    background-color: #FF7C00; /*cor de fundo*/
+    border: none; /*sem borda*/
+    border-radius: 5px; /*borda arredondada*/
+    color: white; /*cor do texto*/
+    cursor: pointer; /*cursor de ponteiro*/
+}
+
+/* quando o mouse está em cima do botão */
+form button:hover{
+    background-color: #FFAA00;
+}

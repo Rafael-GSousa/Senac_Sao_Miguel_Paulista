@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--estilo do jquery ui-->
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+    <title>Cadastro de Clientes</title>
+
+</head>
+
+<body>
+    <!-- Imagem e texto -->
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                SENAC - Clientes
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="mt-2 mb-2">
+            <button class="btn btn-success" id="btnNovoCliente">Novo cliente</button>
+        </div>
+
+        <table id="tabelaClientes" class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <td>CPF</td>
+                    <td>Nome</td>
+                    <td>Cidade</td>
+                    <td>Estado</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <div id="janelaFormulario" style="display: none">
+        <form id="formulario">
+            <input type="hidden" name="Id" id="Id">
+            <div class="form-group">
+                <label for="Nome">Nome*:</label>
+                <input type="text" name="Nome" id="Nome" class="form-control" placeholder="Nome" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="CPF">CPF*:</label>
+                <input type="text" name="CPF" id="CPF" class="form-control" placeholder="CPF" maxlength="100" data-mask="000.000.000-00">
+            </div>
+            <div class="form-group">
+                <label for="Logradouro">Logradouro:</label>
+                <input type="text" name="Logradouro" id="Logradouro" class="form-control" placeholder="Logradouro" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="Numero">Número:</label>
+                <input type="text" name="Numero" id="Numero" class="form-control" placeholder="Número" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="Complemento">Complemento:</label>
+                <input type="text" name="Complemento" id="Complemento" class="form-control" placeholder="Complemento" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="Cidade">Cidade:</label>
+                <input type="text" name="Cidade" id="Cidade" class="form-control" placeholder="Cidade" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="Estado">Estado:</label>
+                <input type="text" name="Estado" id="Estado" class="form-control" placeholder="Estado" maxlength="100">
+            </div>
+        </form>
+    </div>
+
+    <div id="confirmacao" style="display: none">
+        Deseja realmente excluir?
+    </div>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+    <!--definição do jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--plugin jquery validate-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+
+    <!--plugin jquery mask-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+
+    <!--plugin jquery UI-->
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <script src="apiclientes.js"></script>
+    <script src="script.js"></script>
+    <script src="validacoes.js"></script>
+
+
+
+
+
+</body>
+
+</html>

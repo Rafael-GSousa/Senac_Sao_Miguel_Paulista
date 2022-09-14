@@ -1,0 +1,27 @@
+iframe {
+    width: 50%;
+}
+
+form>div{
+    padding: 5px;
+}
+
+form>div>label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form>div>input, form>div>textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 100%;
+    }
+}

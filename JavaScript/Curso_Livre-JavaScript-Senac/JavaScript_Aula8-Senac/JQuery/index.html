@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+
+    <form>
+        <label for="txtCPF">CPF</label>
+        <input type="text" id="txtCPF" data-mask="000.000.000-00">
+        <br>
+        <br>
+        <label for="txtData">Data</label>
+        <input type="text" id="txtData" data-mask="00/00/0000" data-mask-clearifnotmatch="true">
+        <br>
+        <br>
+        <label for="txtCEP">CEP</label>
+        <input type="text" id="txtCEP" data-mask="00000-000" data-mask-reverse="true">
+        <br>
+        <br>
+        <label for="txtValor">Valor</label>
+        <input type="text" id="txtValor" data-mask="#.##0,00">
+        <br>
+        <br>
+        <label for="txtPlaca">Placa</label>
+        <input type="text" id="txtPlaca" data-mask="SSS-0000" data-mask-clearifnotmatch="true">
+        <br>
+        <br>
+        <label for="txtPlaca">Placa Mercosul</label>
+        <input type="text" id="txtPlaca" data-mask="SSS-AAA0" data-mask-clearifnotmatch="true">
+        
+    </form>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- Jquery Mask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</body>
+</html>

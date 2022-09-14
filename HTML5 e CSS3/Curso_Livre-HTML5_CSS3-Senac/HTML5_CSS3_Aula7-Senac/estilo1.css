@@ -1,0 +1,46 @@
+.topo{/*esse é o container*/
+    display: flex;
+    flex-direction: row; /*direção dos itens no container*/
+    justify-content: space-between; /*disposição dos itens no container*/
+    background-color: blueviolet;
+    padding: 5px;
+    align-items: center; /*alinhamento dos itens no container*/
+
+}
+
+.logo{/*esse é o item do container*/
+    background-color: green;
+
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{/*esse é o item do container*/
+    background-color: yellow;
+}
+
+/* container com os itens dispostos em coluna */
+.itens{
+    display: flex;
+    flex-direction: column;
+}
+
+/* definindo a ordem dos itens de um container que estão fora de ordem no html */
+.item1{
+    order: 1;
+}
+
+.item2{
+    order: 2;
+}
+.item3{
+    order: 3;
+}
+.item4{
+    order: 4;
+}
+.item5{
+    order: 5;
+}

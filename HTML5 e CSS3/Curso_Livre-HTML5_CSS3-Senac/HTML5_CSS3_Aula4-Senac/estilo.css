@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+    font-family: 'Segoe UI';
+}
+
+thead{
+    background-color: aquamarine;   
+}
+
+tbody{
+    background-color: beige;
+}
+
+caption{
+    font-weight: bold;
+    color: blueviolet;
+}

@@ -1,0 +1,237 @@
+.topo{
+    background-color: #333;
+
+}
+
+.topo ul li{
+    display: inline; /*faz a lista ficar na horizontal*/
+
+}
+
+.topo ul li a{
+    color: white;
+    text-decoration: none; /*remove o sublinhado do link*/
+    font-size: 22px;
+}
+
+.topo ul li a:hover{
+    color: red;
+}
+
+.topo ul li span{
+    color:white;
+}
+
+.topo img{
+    /* tamanho da imagem */
+    height: 80px;
+}
+
+.conteudoCentralizado{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.conteudoTopo{
+    width: 100%; /*largura total*/
+    max-width: 1200px; /*largura máxima de 1200 pixels*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.destaque{
+    height: 400px;
+    background-image: url('imagens/capa1.jpg');
+    background-position: center;
+
+}
+
+.itemPadrao{
+    /* tamanho total, porém no máximo */
+    width: 100%;
+    max-width: 1200px;;
+
+}
+
+.detalhe1{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.imagemFundo{
+    background-image: url('imagens/bg-principal.png')
+}
+
+.detalhe2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalhe2 .item{
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px; /*arredondar borda*/
+    text-align: center; /*texto centralizado*/
+    box-shadow: 0 0 10px #333;
+    width: 100%;
+}
+
+.detalhe2 .item p{
+    font-size: 26px;
+    color: #9F87BB;
+}
+
+.detalhe2 .item a{
+    background-color: #9F87BB;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* quando o cursor do mouse passar no botão */
+.detalhe2 .item a:hover{
+    background-color: #7831CA;
+
+}
+
+.detalhe3{
+    display: flex;
+    flex-wrap: wrap; /*faz com que a quebra aconteça caso não tenha espaço na tela*/
+    justify-content: space-between;
+}
+
+.detalhe3 h2{
+    width: 100%;
+    text-align: center;
+}
+
+.detalhe3 .item{
+    /* centraliza o texto */
+    text-align: center;
+    color: #9F87BB;
+    /* espaçamento abaixo */
+    margin-bottom: 30px;
+}
+
+.detalhe3 .item span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detalhe3 .item img{
+    /* arredondar a imagem */
+    border-radius: 50%;
+    /* filtro com escala de cinza para deixar com efeito preto e branco e com opacidae */
+    filter: grayscale(0.7) opacity(0.7);    
+}
+
+.detalhe3 .item img:hover{
+    /* quando passar o cursor do mouse por cima da imagem ela volta a sua cor original */
+    filter: grayscale(0) opacity(1);  
+    border-radius: 25%;
+    box-shadow: 0 0 40px black;  
+}
+
+.rodape{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+*{
+    /* Define que o espaço irá contar a partir da borda */
+    box-sizing: border-box;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp img{
+    width: 50px;
+}
+
+@media (max-width: 460px){
+    .destaque{
+        height: 200px;
+        /* tamanho da imagem */
+        background-size: cover;
+    }
+    
+    /* CSS a ser aplicado para telas próximo a mobile */
+    .conteudoTopo{
+        display: block;
+        text-align: center;
+    }
+    .conteudoTopo ul{
+        padding: 0;
+    }
+    .detalhe1{
+        display: block;
+    }
+    .detalhe1 img{
+        width: 100%
+    }
+    .detalhe2{
+        display: block;
+    }
+    .detalhe2 .item{
+        margin: 10px 0;
+    }
+    .detalhe2 p{
+        margin: 0 0 20px 0;
+    }
+    .detalhe3 img{
+        width: 80%;
+    }
+}
+
+@media (min-width: 461px)and(max-width: 768px){
+    /* CSS a ser aplicado para telas próximo a tablet */
+    .detalhe1{
+        display: block;
+    }
+    .detalhe1 img{
+        width: 100%
+    }
+    .detalhe2{
+        display: block;
+    }
+    .detalhe2 .item{
+        margin: 10px 0;
+    }
+    .detalhe2 p{
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width: 769px){
+    /* CSS a ser aplicado para telas próximo a desktop */
+    .whatsapp{
+        display: none;
+    }
+
+}
+
+
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+h1,h2,h3{
+    color: #9F87BB;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Trabalhe Conosco</h1>
+
+
+<form>
+
+    <label for="Nome">Nome:*</label>
+    
+    <br>
+
+    <input type="text" id="Nome" placeholder="Digite seu nome"
+    maxlength="50" title="Seu nome completo e sem abreviações" required>
+
+
+    <br>
+    <br>
+
+    <label for="Email">E-mail:*</label><br>
+    <input type="email" id="Email" placeholder="Digite seu e-mail"
+    title="Seu endereço de e-mail principal"required>
+
+    <br>
+    <br>
+    
+    <label for="Telefone">Telefone:*</label><br>
+    <input type="tel" id="Telefone" maxlength="10"
+    placeholder="Digite seu telefone"
+    title="Seu telefone residencial com DDD" required>
+
+    <br>
+    <br>
+
+    <label for="Celular">Celular (opcional):</label><br>
+    <input type="tel" id="Celular" maxlength="11"
+    placeholder="Digite seu celular (com DDD)"
+    title="Seu celular com DDD">
+
+    <br>
+    <br>
+
+    <label for="Facebook">Facebook:*</label><br>
+    <input type="url" id="Facebook"
+    placeholder="Digite o link do Facebook"
+    title="O link da sua página do Facebook" required>
+
+    <br>
+    <br>
+    
+    <label>Sexo:*</label><br>
+    <input type="radio" id="Masculino" name="Sexo" required>
+    <label for="Masculino">Masculino</label>
+
+
+    <input type="radio" id="Feminino" name="Sexo" required>
+    <label for="Feminino">Feminino</label>
+
+    <br>
+    <br>
+
+    <label for="Estado">Estado:*</label><br>
+    <select id="Estado">
+
+        <option>São Paulo</option>
+        <option>Minas Gerais</option>
+        <option>Espírito Santo</option>
+        <option>Rio de Janeiro</option>
+
+    </select>
+
+    <br>
+    <br>
+
+    <label for="Exp">Experiência Profissional:*</label><br>
+    <textarea id="Exp" cols="30" rows="10" placeholder="Digite suas experiências profissionais"
+    title="Um breve resumo de sua experiência profissional" required></textarea>
+
+    <br>
+    <br>
+
+    <label for="Curriculo">Anexar currículo:*</label><br>
+    <input type="file" id="Curriculo" title="Anexar seu currículo apenas no formato PDF" required>
+
+    <br>
+    <br>
+  
+    <button type="submit">Enviar</button>
+
+
+
+</form>
+</body>
+</html>

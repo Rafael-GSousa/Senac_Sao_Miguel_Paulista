@@ -1,0 +1,267 @@
+/* cinza #3D3D3F */
+
+/* roxo #9F87BB*/
+
+/* Region Padrões */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #9F87BB;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+.bg-principal {
+    background-image: url("../images/bg-principal.png");    
+    background-attachment: fixed;
+}
+
+.text-principal {
+    color: #9F87BB;
+}
+
+.text-justificado {
+    text-align: justify;
+}
+
+.text-centralizado {
+    text-align: center;
+}
+
+.text-a-direita {
+    text-align: right;
+}
+
+.text-negrito {
+    font-weight: bold;
+}
+
+.p-15 {
+    padding: 15px;
+}
+.m-15 {
+    margin: 15px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+img.circulo {
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #999;
+}
+
+.cartao {
+    box-shadow: 0px 0px 10px #666;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cartao.cartao-branco {
+    background-color: white;
+}
+
+/*Region Titulos*/
+
+.titulo {
+    text-align: center;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo>h1 {
+    border-radius: 5px 5px 0 0;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.titulo.titulo-text-principal>h1 {
+    color: #9F87BB;
+}
+
+.titulo.titulo-text-branco>h1 {
+    color: white;
+}
+
+.titulo.titulo-bg-branco {
+    border-bottom-color: white;
+}
+
+.titulo.titulo-bg-branco>h1 {
+    background-color: white;
+}
+
+.titulo.titulo-bg-principal {
+    border-bottom-color: #9F87BB;
+}
+
+.titulo.titulo-bg-principal>h1 {
+    background-color: #9F87BB;
+}
+
+/*End Region Titulos*/
+
+/*Region Botões*/
+
+button.botao, a.botao {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:none;
+}
+
+button.botao.botao-pequeno, a.botao.botao-pequeno {
+    font-size: 80%;
+}
+
+button.botao.botao-principal, a.botao.botao-principal {
+    background-color: #9F87BB;
+    color: #fff;
+}
+
+/*End Region Botões*/
+
+/*End Region Padrões*/
+
+/* Region Cabeçalho */
+
+header {
+    background-color: #3D3D3F;
+    color: white;
+}
+
+header>div>a>img {
+    width: 200px;
+}
+
+header>div>nav>div {
+    padding: 10px;
+}
+
+header>div>nav>div a, header>div>nav>div a:visited, header>div>nav>div a:link {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+/*End Region Cabeçalho*/
+
+/* Region Principal */
+
+main {
+    color: #333;
+}
+
+/*End Region Rodapé*/
+
+/* Region Rodapé */
+
+footer {
+    background-color: #3D3D3F;
+    text-align: center;
+    color: #ccc;
+    font-size: 80%;
+    padding: 15px 0;
+}
+
+footer>div.wrapper>img {
+    width: 200px;
+}
+
+/*End Region Rodapé*/
+
+/* Region Flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-vc {
+    align-items: center;
+}
+
+.flex-vt {
+    align-items: flex-start;
+}
+
+.flex-hj {
+    justify-content: space-between;
+}
+
+.flex-hc {
+    justify-content: center;
+}
+
+/*End Region Flex*/
+
+.breadcumbs {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.breadcumbs a {
+    text-decoration: none;
+}
+
+a, a:link, a:visited {
+    color: #9F87BB;
+}
+
+.separador.separador-cinza {
+    border-bottom-color: #ddd;
+}
+
+.separador>div {
+    border-bottom-color: #ddd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+    header>div.flex-hj {
+        justify-content: center;
+    }
+}

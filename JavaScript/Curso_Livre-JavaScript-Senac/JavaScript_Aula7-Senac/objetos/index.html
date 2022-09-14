@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Tabela de Carros</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Tabela de Carros</h1>
+
+            <label for="txtKm">Quantidade de Km que deseja percorrer:</label>
+            <input type="text" id="txtKm" value="1"><br>
+            <label for="txtvalor">Valor do Combustível:</label>
+            <input type="text" id="txtvalor" value="1"> <br>
+            <button id="btnAtualizar" class="btn btn-sm btn-primary">Atualizar</button>
+
+            <table id="tabelaDeCarros" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Marca
+                        </th>
+                        <th>
+                            Modelo
+                        </th>
+                        <th>
+                            Ano
+                        </th>
+                        <th>
+                            Valor
+                        </th>
+                        <th>
+                            Km/Litro
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <form>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="txtMarca" placeholder="Marca">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="txtModelo" placeholder="Modelo">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="txtAno" placeholder="Ano">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="txtValor" placeholder="Valor">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="txtKmLitro" placeholder="Km por Litro">
+                                </div>
+                            </td>
+                            <td>
+                                <button id="btnAdicionar" type="button" class="btn btn-sm btn-dark">Adicionar</button>
+                            </td>
+                        </tr>
+                    </form>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+.topo{
+    background-color: #333;
+
+}
+
+.topo ul li{
+    display: inline; /*faz a lista ficar na horizontal*/
+
+}
+
+.topo ul li a{
+    color: white;
+    text-decoration: none; /*remove o sublinhado do link*/
+    font-size: 22px;
+}
+
+.topo ul li a:hover{
+    color: red;
+}
+
+.topo ul li span{
+    color:white;
+}
+
+.topo img{
+    /* tamanho da imagem */
+    height: 80px;
+}
+
+.conteudoCentralizado{
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.conteudoTopo{
+    width: 100%; /*largura total*/
+    max-width: 1200px; /*largura máxima de 1200 pixels*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.itemPadrao{
+    /* tamanho total, porém no máximo */
+    width: 100%;
+    max-width: 1200px;;
+
+}
+
+.detalhe1{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.rodape{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+h1,h2,h3{
+    color: #9F87BB;
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+}
+
+input:hover{
+    background-color: black;
+    color: white;
+    font-size: bold;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 15px;
+}
+
+textarea:hover{
+    background-color: black;
+    color: white;
+    font-size: bold;
+}
+
+.dados{
+    width: 50%
+
+}
+
+.form{
+    width: 50%;
+}
+
+.mapa{
+    width: 100%;
+}
+
+button{
+    background-color: #9F87BB;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    font-size: bold;
+    border-radius: 15px;
+}
+
+*{
+    /* Define que o espaço irá contar a partir da borda */
+    box-sizing: border-box;
+}
+
+@media (max-width: 460px){
+    /* CSS a ser aplicado para telas próximo a mobile */
+    .conteudoTopo{
+        display: block;
+        text-align: center;
+    }
+    .conteudoTopo ul{
+        padding: 0;
+    }
+    .detalhe1{
+        display: block;
+    }
+    .dados{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+    .detalhe2{
+        display: block;
+    }
+    .detalhe2 .item{
+        margin: 10px 0;
+    }
+    .detalhe2 p{
+        margin: 0 0 20px 0;
+    }
+    .detalhe3 img{
+        width: 80%;
+    }
+}
+

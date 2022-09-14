@@ -1,0 +1,30 @@
+body{
+    /* Definindo uma imagem como fundo */
+    background-image: url('img/fundo-claro.jpg');
+
+    /* Definição para não repetição */
+    background-repeat: no-repeat;
+
+    /* Tamanho do fundo */
+    background-size: 100%;
+}
+
+.painel{
+    background-image: url('img/fundo.jpg');
+    background-size: 100%;
+    color: white;
+    padding: 30px; /*espaçamento*/
+    text-align: center; /*texto no centro*/
+    margin-bottom: 30px; /*margem inferior*/
+    background-attachment: fixed;/* efeito de fundo fixo */
+    box-shadow: 0px 0px 10px blue; /*definição de sombra para caixa (nesse caso a Div), 1ºpx desloca da 
+    esquerda para direita, 2ºpx desloca de cima para baixo, 3ºpx espessura da sombra*/
+    text-shadow: 2px 2px 2px yellow; /*definição de sombra para o texto, 1ºpx desloca da 
+    esquerda para direita, 2ºpx desloca de cima para baixo, 3ºpx espessura da sombra*/
+
+}
+.painel p{
+    /* rgba - Tons de vermelho, verde e azul. O último item é a opacidade (transparência) */
+    background-color: rgba(24, 184, 224, 0.336); /* definindo cor com transparência*/
+}
+

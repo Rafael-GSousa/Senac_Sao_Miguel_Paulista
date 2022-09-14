@@ -1,0 +1,76 @@
+#topo{
+    background-color: #333333;
+    /* definição de borda apenas para um ou mais lados do item */
+    border-bottom: 10px solid #CCB08A;
+    border-left: 10px solid #123456;
+    border-right: 10px solid #ABCDEF;
+    border-top: 10px solid #CCCCCC;
+}
+
+#topo img{
+    width: 80px;
+    /* margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px; */
+    margin: 10px 20px; /*define as mergens no sentido horário
+    sendo o 1º valor as margens de cima e baixo (top e bottom) 
+    e o 2º valor as margens da direita e esquerda (right e left)*/
+}
+
+.fonteDestaque{
+    font-size: 60px;/*tamanho da fonte*/
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+#destaque{
+    background-color: gray;
+    color: white;
+    font-weight: 100;
+    padding: 100px 20px;
+}
+
+.cafe{
+    padding: 20px;
+    text-align: center    
+}
+
+.cafe img{
+    width: 500px;
+    height: 300px;
+}
+
+.cafe h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.cafe h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.cafe:nth-child(2n+1){
+    background-color: #CCB08A;
+}
+
+#mapa{
+    padding: 20px;
+    text-align: center;
+}
+
+#mapaGoogle{
+    width: 100%;
+}
+
+#rodape{
+    background-color: #333333;
+    color: white;
+    text-align: center;/*centralizar o texto*/
+    padding: 5px;
+    font-size: 14px;
+
+}

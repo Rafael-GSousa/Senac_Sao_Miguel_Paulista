@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>Formulário de Contato</h1>
+
+
+<form>
+
+    <!-- for= definir o mesmo que o ID do campo correspondente -->
+    <label for="Nome">Nome:</label><br>
+
+    <!-- placeholder= texto de exemplo -->
+    <!-- maxlength= quantidade máxima de caracteres -->
+    <input type="text" id="Nome" placeholder="Digite seu nome"
+    maxlength="10" required>
+
+
+    <br>
+    <br>
+
+    <label for="Email">E-mail:</label><br>
+    <input type="email" id="Email" required>
+
+    <br>
+    <br>
+
+    <!-- type number= define o tipo de entrada, nesse caso números -->
+    <label for="Quantidade">Quantidade:</label><br>
+    <input type="number" id="Quantidade" max="10" min="5" required>
+
+    <br>
+    <br>
+
+    <label for="Senha">Senha:</label><br>
+    <input type="password" id="senha" placeholder="Digite sua senha" maxlength="10" disabled>
+
+    <br>
+    <br>
+
+    <!-- checkbox é a opção selecionável -->
+    <input class="aceite" type="checkbox" id="Aceite">
+    <label for="Aceite">Aceita receber mensagens de promoção?</label>
+
+    <br>
+    <br>
+
+    <!-- radio é o type no qual só pode ser selecionada uma opção entre várias no mesmo grupo "name" -->
+    <label>Sexo:</label><br>
+    <input class="SexoM" type="radio" id="Masculino" name="Sexo">
+    <label for="Masculino">Masculino</label>
+
+
+    <input class="SexoF" type="radio" id="Feminino" name="Sexo">
+    <label for="Feminino">Feminino</label>
+
+    <br>
+    <br>
+
+    <label for="EstadoCivil">Estado Civil</label><br>
+    <select id="EstadoCivil">
+
+        <option>Solteiro</option>
+        <option>Casado</option>
+        <option>Divorciado</option>
+        <option>Viúvo</option>
+
+    </select>
+
+    <br>
+    <br>
+
+    <label for="Mensagem">Mensagem:</label><br>
+    <textarea id="Mensagem" cols="30" rows="10"></textarea>
+
+    <br>
+    <br>
+
+    <label for="Arquivo">Arquivo:</label><br>
+    <input class="file" type="file" id="Arquivo">
+
+    <br>
+    <br>
+
+    <input class="seta" type="image" src="seta.png" style="width: 50px">
+
+    <br>
+    <br>
+
+    <button type="reset">Limpar Formulário</button>
+
+    <br>
+    <br>
+
+    <!-- mesmo que não fosse indicado o type como submit, a tag button já vem pré definida como tal -->
+    <button type="submit">Enviar Formulário</button>
+
+
+
+</form>
+</body>
+</html>

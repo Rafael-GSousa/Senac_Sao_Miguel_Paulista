@@ -1,0 +1,11 @@
+div h5{
+    color: yellow;
+}
+
+div p{
+    color: beige;
+}
+
+div h5:hover, p:hover{
+    background-color: blueviolet;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Inline</title>
+
+
+    <!-- O CSS interno pode ser inserido diretamente no cabeçalho utilizando a tag <style> -->
+    <style>
+        th{
+            color:yellow;
+        }
+        td{
+            text-align: center;
+        }
+      
+        
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <table summary="Tabela de preços dos produtos do mercado" border="2">
+
+        <caption>Tabela de Preços</caption>
+
+
+        <thead>
+            <tr>
+                <th rowspan="2">Itens</th>
+                <th colspan="2">Valores</th>
+            </tr>
+            <tr>
+                <th>Varejo</th>
+                <th>Atacado</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Óleo</td>
+                <td>3,50</td>
+                <td>3,00</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>14,90</td>
+                <td>14,00</td>
+            </tr>
+            <tr>
+                <td>Feijão</td>
+                <td>6,00</td>
+                <td>5,00</td>
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>24,40</td>
+                <td>22,00</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
